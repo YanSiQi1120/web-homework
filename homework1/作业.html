@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web作业</title>
+	<meta cherset="utf-8"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			width: 1895px;
+			height: 2466px;
+		}
+		.top{
+			width: 1895px;
+			height: 101px;
+			background-color: #fff;
+		}
+		.logo{
+			width: 118px;
+			height: 45px;
+			float: left;
+			padding-top: 33px;
+			padding-left: 369px;
+			padding-right: 79px;
+		}
+		.nav1 a{
+			text-decoration: none;
+			font-family:Microsoft YaHei;
+			font-size: 18px;
+			font-weight:400;
+			color:rgba(5,5,5,1);
+		}
+		.first a{
+			border-bottom: 2px solid #00A4FF;
+			padding-bottom: 10px;
+		}
+		.nav1{
+			list-style-type: none;
+			float: left;
+		}
+		.nav1 li{
+			width: 100px;
+			height: 101px;
+			line-height: 101px;
+			float: left;
+		}
+		.form1{
+			margin-left: 1065px;
+			padding-top: 31px;
+		}
+		.search{
+			float: left;
+			width:360px;
+			padding-left:19px;
+			padding-top: 13px;
+			padding-bottom: 12px;
+    		border: 1px solid #00A4FF;
+		}
+		.submit{
+			float: left;
+    		width: 51px;
+    		height: 49px;
+    		border: 1px solid #00A4FF;
+    		background: #00A4FF url(search.png) no-repeat center center;
+		}
+		.nav2 a{
+			text-decoration: none;
+			font-size:14px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(102,102,102,1);
+		}
+		.nav2{
+			list-style-type: none;
+			float: left;
+		}
+		.nav2 li{
+			padding-left: 31px;
+			width: 100px;
+			height: 49px;
+			line-height: 49px;
+			float: left;
+		}
+		.banner{
+			width:1895px;
+			height: 420px;
+			position: relative;
+		}
+		.banner1{
+			width: 1895px;
+			height: 420px;
+		}
+		.banner2{
+			height: 420px;
+			width: 1005px;
+			line-height: 420px;
+			padding-left: 555px;
+			position: absolute;
+		}
+		.banner3{
+			height: 420px;
+			width: 195px;
+			padding-left: 360px;
+			position: absolute;
+		}
+		.nav3 {
+			padding-left: 380px;
+			list-style-type: none;
+			float: left;
+			height: 365px;
+			position: absolute;
+		}
+		.nav3 a{
+			text-decoration: none;
+			font-size:14px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:black;
+			line-height:44px;
+		}
+		.nav3 li:hover>a{
+			color:rgba(0,180,255,1);
+		}
+		.next{
+			width: 5.3px;
+			padding-right: 21px;
+			padding-left: 524px;
+			list-style-type: none;
+			float: left;
+			height: 365px;
+			position: absolute;
+		}
+		.next{
+			text-decoration: none;
+			line-height:44px;
+		}
+		.bottom{
+			margin-top: 8px;
+			width: 1200px;
+			height: 60px;
+			float: left;
+			margin-left: 360px;
+			background-color: #ddd;
+		}
+		.nav4{
+			margin-left: 34px;
+		}
+		.nav4 li{
+			padding-right: 34px;
+			color:rgba(0,180,255,1);
+			padding-top:21px;
+			padding-bottom:21px;
+			float: left;
+			font-size:16px;
+			list-style-type: none;
+		}
+		.nav6{
+			width: 1105px;
+			padding-top:21px;
+			padding-bottom:21px;
+		}
+		.nav6 li{
+			border-left: 1px solid #BFBFBF;
+			padding-right:34px;
+			padding-left:34px;
+			list-style-type: none;
+			float: left;
+			font-size:16px;
+			font-family:Microsoft YaHei;
+			font-weight:bold;
+			color:#050505;
+		}
+		#last{
+			color:rgba(0,180,255,1);
+			font-size:16px;
+			list-style-type: none;
+			border: none;
+			float: right;
+			padding-right: 0;
+		}
+		.container1{
+			width: 1200px;
+			height: 19px;
+			margin-left: 362px;
+		}
+		.container1 ul{
+			list-style-type: none;
+		}
+		.container1 li{
+			padding-top: 36px;
+			height:19px;
+			float: left;
+		}
+		.qianduan{
+			padding-right: 291px;
+			float: left;
+			height:19px;
+			font-size:20px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(73,73,73,1);
+		}
+		.container1 li:hover>a{
+			color:rgba(0,180,255,1);
+		}	
+		.container1 a{
+			text-decoration: none;
+			padding-right: 68px;
+			width:327px;
+			height:17px;
+			font-size:16px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(165,165,165,1);
+		}
+		#last2{
+			font-size:12px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(165,165,165,1);
+			float: right;
+			padding-right: 29px;
+		}
+		.img2{
+			width: 1200px;
+			float: left;
+			margin-left:420px;
+			margin-top: 60px;
+		}
+		.list2 {
+			list-style-type: none;			
+		}
+		.list2 li{
+			margin-right: 80px;
+			float: left;
+			margin-bottom: 80px;
+		}
+		.img3{
+			width: 1200px;
+			float: left;
+			margin-left:420px;
+		}
+		.list3{
+			list-style-type: none;			
+		}
+		.list3 li{
+			margin-right: 80px;
+			float: left;
+			margin-bottom: 80px;
+		}
+		.container2{
+			width: 1200px;
+			height: 19px;
+			margin-left: 362px;
+		}
+		.container2 ul{
+			list-style-type: none;
+		}
+		.container2 li{
+			height:19px;
+			float: left;
+		}
+		.jinqi{
+			padding-right: 291px;
+			float: left;
+			height:19px;
+			font-size:20px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(73,73,73,1);
+		}
+		.container2 li:hover>a{
+			color:rgba(0,180,255,1);
+		}	
+		.container2 a{
+			text-decoration: none;
+			padding-right: 68px;
+			width:327px;
+			height:17px;
+			font-size:16px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(165,165,165,1);
+		}
+		#last3{
+			font-size:12px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(165,165,165,1);
+			float: right;
+			padding-right: 29px;
+		}
+		.img4{
+			width: 1000px;
+			float: left;
+			margin-left:550px;
+			margin-top: 60px;
+		}
+		.list4{
+			list-style-type: none;			
+		}
+		.list4 li{
+			margin-right: 40px;
+			float: left;
+			margin-bottom: 40px;
+		}
+		.img5{
+			width: 1000px;
+			float: left;
+			margin-left:550px;
+			margin-right: 550px;
+		}
+		.list5{
+			list-style-type: none;			
+		}
+		.list5 li{
+			margin-right: 40px;
+			float: left;
+			margin-bottom: 40px;
+		}
+		.list0{
+			list-style-type: none;
+			float: left;
+			position: relative;
+		}
+		.hide{
+			width: 221px;
+			height: 80px;
+			background: rgba(0, 0, 0, 0.6);
+			color: #fff;
+			position: absolute;
+			bottom: 0;
+		}
+		.hide1{
+			width: 214px;
+			height: 80px;
+			background: rgba(0, 0, 0, 0.6);
+			color: #fff;
+			position: absolute;
+			bottom: 0;
+		}
+		.hide ul{
+			list-style-type: none;
+			float: left;
+			margin-left: 25px;
+		}
+		.l1{
+			font-size: 18px;
+			font-family:Microsoft YaHei;
+			font-weight:bold;
+			color:rgba(255,255,255,1);
+		}
+		.l2{
+			padding-left: 30px;
+			font-size: 18px;
+			font-family:Microsoft YaHei;
+			font-weight:bold;
+			color:rgba(255,255,255,1);
+		}
+		.fin{
+			border: 1px solid #00A4FF;
+			float: left;
+			width:1895px;
+			height:417px;
+			background:rgba(255,255,255,1);
+		}
+		.list6{
+			float: left;
+			list-style-type: none;
+			margin-top: 124px;
+			margin-left: 380px;
+		}
+		.logo1{
+			padding-bottom: 35px;
+
+		}
+		.qwe{
+			height:12px;
+			font-size:12px;
+			font-family:SimSun;
+			font-weight:400;
+			color:rgba(102,102,102,1);
+			line-height:18px;
+			padding-bottom: 33px;
+		}
+		.zxc{
+			text-align: center;
+			width: 120px;
+			height: 36px;
+			font-size:16px;
+			font-family:Microsoft YaHei;
+			font-weight:400;
+			color:rgba(0,164,255,1);
+			line-height:36px;
+			border: 1px solid #00A4FF;
+		}
+		.list9{
+			margin-left: 123px;
+			float: left;
+			list-style-type: none;
+			margin-top: 129px;
+		}
+		.right{
+			padding-bottom: 15px;
+			font-size:16px;
+			font-family:Microsoft YaHei;
+			font-weight:800;
+			color:rgba(51,51,51,1);
+			line-height:21px;
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="top">
+		<img src="logo.png" alt="logo图" class="logo" />
+		<ul class="nav1">
+			<li class="first"><a href="#">首页</a></li>
+			<li><a href="#">详情</a></li>
+			<li><a href="#">成团历程</a></li>
+		</ul>
+		<form class="form1">
+            <input type="text" placeholder="输入关键词" class="search" />
+            <input type="button" class="submit" />
+        </form>
+        <ul class="nav2">
+        	<li><a href="#">成员介绍</a></li>
+        </ul>
+	</div>
+	<div class="banner">
+			<img src="kaishi.png" alt="banner图2" class="banner2" />
+			<img src="banner2.png" alt="banner图3" class="banner3" />
+			<ul class="next">
+				<li><img src="arrow2.png" alt="zhixiang" class="arrow2" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+				<li><img src="arrow1.png" alt="zhixiang" class="arrow1" /></li>
+			</ul>
+			<ul class="nav3">
+				<li><a href="#">成员详情</a></li>
+				<li><a href="#">出道经历</a></li>
+				<li><a href="#">舞蹈基础</a></li>
+				<li><a href="#">声乐基础</a></li>
+				<li><a href="#">初舞台</a></li>
+				<li><a href="#">初评级</a></li>
+				<li><a href="#">后续舞台</a></li>
+				<li><a href="#">后续去留</a></li>
+				<li><a href="#">出道夜</a></li>
+			</ul>
+		<img src="banner1.png" alt="banner图1" class="banner1" />
+	</div>
+	<div class="bottom">
+		<div class="center">
+			<ul class="nav4">
+				<li class="fir">导师团</li>
+			</ul>
+			<ul class="nav6">				
+				<li>程潇</li>
+				<li>李荣浩</li>
+				<li>欧阳靖</li>
+				<li>王嘉尔</li>
+				<li>张艺兴</li>
+				<li>周洁琼</li>			
+				<li id="last">无关番位</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container1">
+		<ul>
+			<li class="qianduan">最终出道</li>
+			<li><a href="#">成员</a></li>
+			<li><a href="#">舞台</a></li>
+			<li><a href="#">名次</a></li>
+			<li><a href="#">后续</a></li>
+			<li id="last2">查看全部</li>
+		</ul>
+	</div>
+	<div class="img2">
+		<ul class="list2">
+			<li><img src="caixukun.png" class="cxk"/></li>
+			<li><img src="chenlinong.png" class="cln"/></li>
+			<li><img src="fanchengcheng.png" class="fcc"/></li>
+			<li><img src="Justin.png" class="Justin"/></li>
+			<li><img src="linyanjun.png" class="lyj"/></li>
+			<li><img src="zhuzhengtin.png" class="zzt"/></li>
+		</ul>
+	</div>
+	<div class="img3">
+		<ul class="list3">
+			<li><img src="wangziyi.png" class="wzy"/></li>
+			<li><img src="xiaogui.png" class="xg"/></li>
+			<li><img src="youzhangjin.png" class="yzj"/></li>
+		</ul>
+	</div>
+	<div class="container2">
+		<ul>
+			<li class="jinqi">近期情况</li>
+			<li><a href="#">个人</a></li>
+			<li><a href="#">综艺</a></li>
+			<li><a href="#">音乐</a></li>
+			<li><a href="#">热播</a></li>
+			<li id="last3">查看全部</li>
+		</ul>
+	</div>
+	<div class="img4">
+		<ul class="list4">
+			<li class="list0">
+				<img src="caixukun2.png" class="cxk"/>
+				<div class="hide1">
+					<ul>
+						<li class="l2">蔡徐坤	《奔跑吧》</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="chenlinong2.png" class="cln"/>
+				<div class="hide">
+					<ul>
+						<li class="l1">陈立农	出演MV、《DD52》导师</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="fanchengcheng2.png" class="fcc"/>
+				<div class="hide1">
+					<ul>
+						<li class="l2">范丞丞	《青春环游记》、《我要这样生活》</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="Justin2.png" class="Justin"/>
+				<div class="hide">
+					<ul>
+						<li class="l1">黄明昊	看我的生活》</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="linyanjun2.png" class="lyj"/>
+				<div class="hide1">
+					<ul>
+						<li class="l2">林彦俊	新戏开机</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="zhuzhengtin2.png" class="zzt"/>
+				<div class="hide">
+					<ul>
+						<li class="l1">朱正廷	《舞者》、《旺喵物语》</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="img5">
+		<ul class="list5">
+			<li class="list0">
+				<img src="wangziyi2.png" class="wzy"/>
+				<div class="hide1">
+					<ul>
+						<li class="l2">王子异	《怪你过分美丽》、《我是唱作人》</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="xiaogui2.png" class="xg"/>
+				<div class="hide1">
+					<ul>
+						<li class="l2">王琳凯	《说唱听我的》、《我要这样生活》</li>
+					</ul>
+				</div>
+			</li>
+			<li class="list0">
+				<img src="youzhangjing2.png" class="yzj"/>
+				<div class="hide">
+					<ul>
+						<li class="l1">尤长靖	《昨日青空》不同版本</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="fin">
+		<ul class="list6">
+			<li><img src="mingcheng.png" class="logo1"/></li>
+			<li class="qwe">中国选秀节目元年，出现的最具价值的男团，却输在了“限定”二字。</li>
+			<li class="zxc">百分九</li>
+		</ul>
+		<ul class="list9">
+			<li class="right">因涉及各种问题，不予公开展示，版权本人所有，其中内容严禁外传</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
